@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDB</title>
+    <link rel="stylesheet" href="style.css?v=12">
+</head>
+<body>
+
+    <div class="container">
+        <h1>📚 Test Platforma</h1>
+
+        <div id="menu" class="menu-buttons">
+            <button class="menu-btn" onclick="startTest('fan1')">
+                RDB
+            </button>
+        </div>
+
+        <div id="quiz" class="hidden">
+            <h2 id="fanTitle">RustamBoy😎</h2>
+
+            <div id="question"></div>
+
+            <div id="answers"></div>
+
+            <div class="quiz-footer">
+                <div id="progress"></div>
+                <div id="liveScore"></div>
+            </div>
+        </div>
+
+        <div id="result" class="hidden">
+            <h2>Test tugadi</h2>
+            <div id="score"></div>
+
+            <button class="restart-btn" onclick="location.reload()">
+                Qayta boshlash
+            </button>
+        </div>
+    </div>
+
+    <script src="fan1.js?v=12"></script>
+    <script src="main.js?v=12"></script>
+
+</body>
+</html>

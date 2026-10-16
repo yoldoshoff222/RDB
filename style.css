@@ -1,0 +1,238 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    background: #f4f7fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: #1e293b;
+}
+
+/* ===== MAIN CARD ===== */
+.container {
+    width: 100%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.12);
+    border: 1px solid #e2e8f0;
+}
+
+/* ===== TITLE ===== */
+h1 {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 35px;
+    font-size: 16px;
+}
+
+#fanTitle {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2563eb;
+    margin-bottom: 25px;
+}
+
+/* ===== MENU ===== */
+.menu-buttons {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 30px !important;
+    width: 100% !important;
+    margin: 40px auto !important;
+    flex-wrap: wrap !important;
+}
+
+.menu-buttons .menu-btn {
+    width: 150px !important;
+    height: 60px !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    border-radius: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: 0.3s !important;
+}
+
+.menu-buttons .menu-btn:nth-child(1) {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa) !important;
+    color: white !important;
+}
+
+/* ===== QUESTION ===== */
+#question {
+    background: linear-gradient(135deg, #fffbea, #fef3c7);
+    border: 2px solid #fcd34d;
+    border-left: 8px solid #f59e0b;
+    border-radius: 22px;
+    padding: 26px;
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+    color: #78350f;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.15);
+}
+
+/* ===== ANSWERS ===== */
+#answers {
+    display: grid;
+    gap: 15px;
+}
+
+#answers button {
+    width: 100%;
+    padding: 18px 20px;
+    border: 2px solid #e2e8f0;
+    border-radius: 16px;
+    background: white;
+    color: #1e293b;
+    font-size: 17px;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+#answers button:hover {
+    border-color: #60a5fa;
+    background: #eff6ff;
+    transform: translateX(5px);
+}
+
+/* ===== CORRECT / WRONG ===== */
+.correct {
+    background: #dcfce7 !important;
+    border-color: #22c55e !important;
+    color: #166534 !important;
+}
+
+.wrong {
+    background: #fee2e2 !important;
+    border-color: #ef4444 !important;
+    color: #991b1b !important;
+}
+
+/* ===== FOOTER ===== */
+.quiz-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 28px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+#progress,
+#liveScore {
+    padding: 12px 18px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#progress {
+    background: #f1f5f9;
+    color: #475569;
+}
+
+#liveScore {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+/* ===== RESULT ===== */
+#result {
+    text-align: center;
+}
+
+#result h2 {
+    font-size: 34px;
+    color: #16a34a;
+    margin-bottom: 20px;
+}
+
+#score {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #0f172a;
+}
+
+.restart-btn {
+    border: none;
+    border-radius: 16px;
+    padding: 18px 28px;
+    background: #2563eb;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+.restart-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-3px);
+}
+
+/* ===== HIDDEN ===== */
+.hidden {
+    display: none;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+    .container {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    #question {
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    #answers button {
+        font-size: 15px;
+        padding: 15px;
+    }
+
+    .menu-btn {
+        font-size: 17px;
+        padding: 16px;
+    }
+
+    .quiz-footer {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #progress,
+    #liveScore {
+        text-align: center;
+    }
+}
